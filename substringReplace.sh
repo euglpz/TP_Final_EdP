@@ -5,9 +5,9 @@
 # minúsculas y mayúsculas, pero ignorando acentos.
 #--------------------------------------------------------------------------
 
-FILE=$1		#Primer argumento: archivo
-SEARCH=$2	#Segundo argumento: cadena a buscar
-REPLACE=$3	#Tercer argumento: cadena a reemplazar
+FILE="$1"		#Primer argumento: archivo
+SEARCH="$2"	#Segundo argumento: cadena a buscar
+REPLACE="$3"	#Tercer argumento: cadena a reemplazar
 CHAR=""
 SEARCH_RGX=""
 
