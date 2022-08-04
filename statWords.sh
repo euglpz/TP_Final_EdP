@@ -10,8 +10,8 @@ FILE=$1
 
 SOLO_PALABRAS="^[A-Za-z]+$"	#Regex para omitir construcciones de caracteres que no sean palabras.
 
-MAYOR=0		#Palabra de mayor longitud
-MENOR=0		#Palabra de menor longitud
+MAYOR=""	#Palabra de mayor longitud
+MENOR=""	#Palabra de menor longitud
 CONT=0		#Contador de palabras
 SUMA=0		#Suma total de caracteres del archivo
 
