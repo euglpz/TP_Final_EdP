@@ -1,5 +1,5 @@
-# TP_Final_EdP
-## Trabajo Práctico Final - Entorno de Programación - TUIA 2022
+# Text editor
+## Análisis de un archivo de texto seleccionado
 
 El proyecto consiste en generar un contenedor que al ejecutarse presente un menú de opciones de filtrados (mini aplicaciones creadas a partir de bash scripts) de un archivo de texto dado.  
 Para el mismo, se editó un Dockerfile y se construyó una imágen, a partir de la cual se ejecutará el contenedor.
