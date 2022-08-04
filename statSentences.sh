@@ -5,9 +5,9 @@
 #---------------------------------------------------------------------
 FILE=$1
 
-LARGA=0		#Cantidad de caracteres de la oracion mas larga
-CORTA=0		#Cantidad de caracteres de la oracion mas corta
-PROM=0		#Cantidad promedio de caracteres por oracion
+LARGA=""	#Cantidad de caracteres de la oracion mas larga
+CORTA=""	#Cantidad de caracteres de la oracion mas corta
+PROM=""		#Cantidad promedio de caracteres por oracion
 CANT_OR=0	#Cantidad de oraciones
 LONG=0		#Longitud de oracion actual
 
@@ -39,7 +39,7 @@ while read -n1 char; do
 	fi
 done <$FILE
 
-PROM=$(($ACUM/$CANT_OR))
+[ $CANT_OR != 0 ] && PROM=$(($ACUM/$CANT_OR))
 
 echo "Oracion mas larga: $LARGA caracteres"
 echo "Oracion mas corta: $CORTA caracteres"
