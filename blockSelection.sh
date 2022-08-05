@@ -26,6 +26,10 @@ FILE=$1
 BLOCK=$2
 SELECT=$3
 
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
+
 #Validación de argumentos
 [[ ! "$BLOCK" =~ [PpOo] ]] && echo "Bloque incorrecto. Ingrese P (párrafo) ׀ O (oración)" && exit 1
 [[ ! "$SELECT" =~ [0-9]+ ]] && echo "Número de párrafo/oración inválido" && exit 1
