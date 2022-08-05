@@ -1,12 +1,13 @@
 #!/bin/bash
 
-#############################################################################################
-#
+#-------------------------------------------------------------------------------------------
 # Indicador estadistico de longitud de palabra (mas larga, mas corta y promedio de longitud)
-#
-#############################################################################################
+#-------------------------------------------------------------------------------------------
 
 FILE=$1
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
 
 SOLO_PALABRAS="^[A-Za-z]+$"	#Regex para omitir construcciones de caracteres que no sean palabras.
 
