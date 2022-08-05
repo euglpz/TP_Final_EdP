@@ -10,6 +10,9 @@ SEARCH="$2"	#Segundo argumento: cadena a buscar
 REPLACE="$3"	#Tercer argumento: cadena a reemplazar
 CHAR=""
 SEARCH_RGX=""
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
 
 # Mensaje de error de argumentos
 [ $# -ne 3 ] && echo "Se esperan tres argumentos: [ARCHIVO] [CADENA A BUSCAR] [CADENA DE REEMPLAZO]" && exit 1
