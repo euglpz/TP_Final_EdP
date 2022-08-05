@@ -41,10 +41,11 @@ done <$FILE
 
 [ $CANT_OR != 0 ] && PROM=$(($ACUM/$CANT_OR))
 
+echo "Cantidad de oraciones: $CANT_OR"
 echo "Oracion mas larga: $LARGA caracteres"
 echo "Oracion mas corta: $CORTA caracteres"
 echo "Longitud promedio: $PROM caracteres"
-echo "Cantidad de oraciones: $CANT_OR"
+
 
 exit 0
 
