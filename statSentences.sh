@@ -5,6 +5,10 @@
 #---------------------------------------------------------------------
 FILE=$1
 
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
+
 LARGA=""	#Cantidad de caracteres de la oracion mas larga
 CORTA=""	#Cantidad de caracteres de la oracion mas corta
 PROM=""		#Cantidad promedio de caracteres por oracion
