@@ -5,6 +5,9 @@
 #-----------------------------------------
 
 FILE=$1
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
 			
 # tr -d '.,?![0-9]' 		--> Elimino caracteres indeseados
 # tr '[:upper:]' '[:lower:]' 	--> Transformo todo a minusculas
