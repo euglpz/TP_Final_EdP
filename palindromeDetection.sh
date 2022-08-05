@@ -6,6 +6,10 @@
 
 FILE=$1
 
+OPEN_FILE=$(cat $FILE)
+
+[[ $OPEN_FILE =~ "" ]] && echo "No hay palabras en el texto" && exit 1
+
 while read linea; do
 	for palabra in $linea; do
 		
